@@ -1,0 +1,39 @@
+{
+  "class_names": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "input_size": [
+    224,
+    224,
+    3
+  ],
+  "preprocessing": "RGB, exif_transpose, resize 224x224 bicubic, piksel float32 0-255 TANPA normalisasi (normalisasi sudah di dalam model)",
+  "models": {
+    "baseline_cnn": {
+      "file": "baseline_cnn_trashnet.h5",
+      "source_run": "baseline_cnn_s42",
+      "test_accuracy": 0.6965699208443272,
+      "test_f1_macro": 0.6807867384637075
+    },
+    "efficientnetb0": {
+      "file": "efficientnetb0_trashnet.h5",
+      "source_run": "efficientnetb0_s42",
+      "test_accuracy": 0.899736147757256,
+      "test_f1_macro": 0.8821539221894619
+    }
+  },
+  "dataset": "garythung/trashnet",
+  "split_seed": 42,
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "tf_version": "2.21.0",
+  "keras_version": "3.13.2"
+}

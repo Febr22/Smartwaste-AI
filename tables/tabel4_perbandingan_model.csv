@@ -1,0 +1,3 @@
+Model,Acc.,Prec. (macro),Rec. (macro),F1 (macro),Param (M),Inferensi GPU (ms),Inferensi CPU (ms)
+Baseline CNN,0.7018 ± 0.0053,0.6879 ± 0.0056,0.7291 ± 0.0077,0.6895 ± 0.0077,1.24,3.99,43.86
+EfficientNetB0 (usulan),0.9024 ± 0.0070,0.8877 ± 0.0121,0.8901 ± 0.0075,0.8875 ± 0.0089,4.06,9.66,52.0
